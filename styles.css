@@ -1,0 +1,160 @@
+body, html {
+    margin: 0;
+}
+/*************************************************/
+a {
+	text-decoration: none;}
+	
+aside {
+  width: 290px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -245px;
+  background: #262626;
+  box-sizing: border-box;
+  padding: 40px 10px;
+  padding-top: 0;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #d4d4d4;
+}
+
+#burger {
+  width: 30px;
+  float: right;
+  margin: 10px 0;
+}
+
+.burger {
+  display: block;
+  border: 2px solid white;
+  margin: 5px 0;
+}
+
+aside input {
+  margin: 10px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 45px;
+}
+form, .inner-box {
+  clear: both;
+}
+.title {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.title h1  {
+  font-size: 7vw;
+}
+
+.title h3 {
+  font-size: 5vw;
+}
+
+.inner-box {
+  display: grid;
+}
+.inner-box {
+  width: 210px;
+}
+#instructions {
+  margin-bottom: 20px;
+}
+
+#instructions span {
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+#leader-board {
+  display: grid;
+  grid-template-columns: 30px 1fr 55px;
+}
+
+#lives, #score, #online {
+  display: grid;
+  grid-template-columns: 1fr 55px 55px;
+}
+
+.online, .leader-board {
+  grid-column: 1/-1;
+}
+/****************************************************************/
+#board {
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.sqr-con {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: 1fr;
+  height: 100%;
+  margin-left: 40px;
+}
+
+.sqr {
+  width: 100%;
+  background: #d3d8da;
+  border: 1px solid black;
+}
+
+@media only screen and (min-width: 657px) {
+    #burger {
+      display: none;
+    }
+    aside {
+      padding-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+	  aside {
+	    display: block;
+	    left: 0;
+	    grid-column: 1;
+	  }
+	  
+    main {
+      margin-left: 0;
+      grid-column: 2;
+      box-sizing: border-box;
+      padding: 0 20px;
+      margin-left: 0;
+    }
+    .title {
+      padding: 0;
+    }
+    .title h1  {
+      font-size: 5vw;
+    }
+
+    .title h3 {
+      font-size: 4vw;
+    }
+    
+  /******************************************************************/
+    #md-screen-con {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+    }
+    #board {
+      grid-column: 2;
+    }
+    .sqr-con {
+      margin-left: 0;
+    }
+}
