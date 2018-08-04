@@ -166,9 +166,21 @@ form, .inner-box {
 			height: 100vw;
 			transform: rotate(90deg);
 		}
-		#board, .q-a-outer {
+		#board, .q-a-outer, main {
 			height: 100vw;
 			width: 100vh;
+		}
+		main {
+			justify-content: initial;
+		}
+		.title {
+			width: 80%;
+		}
+		.title h1 {
+			font-size: 5vw;
+		}
+		.title h3 {
+			font-size: 4vw;
 		}
 		
 	}
