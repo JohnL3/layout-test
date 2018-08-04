@@ -9,3 +9,10 @@ $('#burger').click(function(){
        offScreen = '-245px';
    }
 })
+
+
+$( window ).resize(function() {
+  if($(window).width() > 657) {
+	  $('aside').css('left','0');
+  }
+});
