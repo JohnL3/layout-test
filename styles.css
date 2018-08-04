@@ -159,7 +159,21 @@ form, .inner-box {
   width: 100%;
   margin-bottom: 25px;
 }
-    
+
+@media only screen and (max-width: 656px) {
+	@media only screen and (orientation:landscape){
+		#md-screen-con {
+			height: 100vw;
+			transform: rotate(90deg);
+		}
+		#board, .q-a-outer {
+			height: 100vw;
+			width: 100vh;
+		}
+		
+	}
+}
+
 @media only screen and (min-width: 657px) {
     #burger {
       display: none;
@@ -217,15 +231,6 @@ form, .inner-box {
     #question-answer {
       margin-left: 0;
     }
+	
 }
 
-@media only screen and (orientation:landscape){
-	#md-screen-con {
-		height: 100vw;
-		-webkit-transform: rotate(90deg);
-		-moz-transform: rotate(90deg);
-		-o-transform: rotate(90deg);
-		-ms-transform: rotate(90deg);
-		transform: rotate(90deg);
-	}
-}
