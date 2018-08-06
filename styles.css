@@ -111,8 +111,26 @@ form, .inner-box {
   width: 100%;
   background: #d3d8da;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.type {
+	font-size: 2.5vw;
 }
 
+.correct {
+	border: 5px solid green;
+}
+.wrong {
+	border: 5px solid red;
+}
+.correct span,
+.wrong span {
+	font-size: 10px;
+	font-weight: 600;
+}
 /***********************************************************************/
 .q-a-outer {
   width: 100%;
@@ -122,6 +140,7 @@ form, .inner-box {
   justify-content: center;
   position: absolute;
   top: 0;
+  display: none;
 }
 
 #question-answer {
@@ -160,8 +179,9 @@ form, .inner-box {
   margin-bottom: 25px;
 }
 
-@media only screen and (max-width: 656px) {
-	@media only screen and (orientation:landscape){
+@media only screen
+	and (max-width: 656px)
+	and (orientation: landscape) {
 		#md-screen-con {
 			height: 100vw;
 			transform: rotate(90deg);
@@ -182,9 +202,7 @@ form, .inner-box {
 		.title h3 {
 			font-size: 4vw;
 		}
-		
 	}
-}
 
 @media only screen and (min-width: 657px) {
     #burger {
